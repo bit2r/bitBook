@@ -18,6 +18,14 @@ book:
       chapters:
         - summary.qmd
     - references.qmd
+  sidebar:
+    pinned: true
+    
+  repo-url: https://github.com/bit2r/bitBook
+  search: 
+    location: sidebar
+    type: textbox
+  downloads: [pdf]
 
 bibliography: references.bib
 link-citations: yes
