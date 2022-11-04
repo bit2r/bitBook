@@ -11,12 +11,17 @@ book:
   date: last-modified
   chapters:
     - index.qmd
+    - part: "글쓰기"
+      chapters:
+        - part_I_01_intro.qmd
+        - part_I_02_history.qmd
     - part: "디지털 글쓰기"
       chapters:
-        - intro.qmd
+        - part_II_01_fonts.qmd
+        - part_II_02_pdf.qmd
     - part: "빛에듀(Bit-Edu)"
       chapters:
-        - summary.qmd
+        - bitstat.qmd
     - references.qmd
   sidebar:
     pinned: true
@@ -27,9 +32,8 @@ book:
     type: textbox
   downloads: [pdf]
 
-bibliography: references.bib
+bibliography: bibliography.bib
 link-citations: yes
-csl: apa-single-spaced.csl
 mainfont: "NanumMyeongjo"
 sansfont: "NanumGothic"
 monofont: "D2Coding"
@@ -41,5 +45,7 @@ format:
   pdf:
     documentclass: scrreprt
 
+
+# quarto.cmd render --to pdf -s -V papersize:a4 --output-dir _pdf
 
 
