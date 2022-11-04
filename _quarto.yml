@@ -1,0 +1,30 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "디지털 문해력과 글쓰기"
+  subtitle: "오픈소스 소프트웨어: 빛에듀(Bit-Eud)"
+  author: "이광춘"
+  date: last-modified
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+link-citations: yes
+csl: apa-single-spaced.csl
+mainfont: "NanumMyeongjo"
+sansfont: "NanumGothic"
+monofont: "D2Coding"
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
