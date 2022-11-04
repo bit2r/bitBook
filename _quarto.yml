@@ -2,15 +2,21 @@ project:
   type: book
   output-dir: docs
 
+lang: kr
+
 book:
-  title: "디지털 문해력과 글쓰기"
+  title: "데이터 문해력과 디지털 글쓰기"
   subtitle: "오픈소스 소프트웨어: 빛에듀(Bit-Eud)"
-  author: "이광춘"
+  author: "이광춘 / 한국 R 사용자회"
   date: last-modified
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - part: "디지털 글쓰기"
+      chapters:
+        - intro.qmd
+    - part: "빛에듀(Bit-Edu)"
+      chapters:
+        - summary.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -23,6 +29,7 @@ monofont: "D2Coding"
 format:
   html:
     theme: cosmo
+    cover-image: koRea_logo.png
   pdf:
     documentclass: scrreprt
 
