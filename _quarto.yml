@@ -7,8 +7,9 @@ lang: kr
 book:
   title: "데이터 문해력과 디지털 글쓰기"
   subtitle: "오픈소스 소프트웨어: 빛에듀(Bit-Eud)"
-  author: "이광춘 / 한국 R 사용자회"
+  author: "한국 R 사용자회"
   date: last-modified
+  date-format: "YYYY년 MM월 DD일"
   chapters:
     - index.qmd
     - part: "글쓰기"
@@ -17,11 +18,16 @@ book:
         - part_I_02_history.qmd
     - part: "디지털 글쓰기"
       chapters:
+        - markdown_01_mess.qmd
+        - markdown_02_markdown.qmd
+        - markdown_03_advanced.qmd
         - part_II_01_fonts.qmd
         - part_II_02_pdf.qmd
     - part: "빛에듀(Bit-Edu)"
       chapters:
-        - bitstat.qmd
+        - BitStat_01_data_prepare.qmd
+        - BitStat_02_descriptive_summary.qmd
+        - BitStat_03_correlation.qmd
     - references.qmd
   sidebar:
     pinned: true
@@ -46,6 +52,6 @@ format:
     documentclass: scrreprt
 
 
-# quarto.cmd render --to pdf -s -V papersize:a4 --output-dir _pdf
+# quarto.cmd render --to pdf -s -V papersize:b5 --output-dir _pdf_B5
 
 

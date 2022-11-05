@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="kr" xml:lang="kr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.237">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>데이터 문해력과 디지털 글쓰기 - 8&nbsp; 데이터 준비</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./BitStat_02_descriptive_summary.html" rel="next">
+<link href="./part_II_02_pdf.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">데이터 준비</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">데이터 문해력과 디지털 글쓰기</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/bit2r/bitBook" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="./데이터-문해력과-디지털-글쓰기.pdf" title="Download PDF" class="sidebar-tool px-1"><i class="bi bi-file-pdf"></i></a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">서문</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">글쓰기</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./part_I_01_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">디지털 글쓰기</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./part_I_02_history.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">문자와 종이 역사</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">디지털 글쓰기</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markdown_01_mess.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">심각한 현재 상황</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markdown_02_markdown.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">마크다운 기초</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markdown_03_advanced.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">고급 마크다운</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./part_II_01_fonts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">한글 글꼴</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./part_II_02_pdf.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">한글 PDF</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">빛에듀(Bit-Edu)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BitStat_01_data_prepare.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">데이터 준비</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BitStat_02_descriptive_summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">집계표</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BitStat_03_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">상관관계</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">참고문헌</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#데이터-준비-기능" id="toc-데이터-준비-기능" class="nav-link active" data-scroll-target="#데이터-준비-기능"><span class="toc-section-number">8.1</span>  데이터 준비 기능</a>
+  <ul class="collapse">
+  <li><a href="#데이터-업로드하기" id="toc-데이터-업로드하기" class="nav-link" data-scroll-target="#데이터-업로드하기"><span class="toc-section-number">8.1.1</span>  데이터 업로드하기</a></li>
+  <li><a href="#파일-포맷-선택" id="toc-파일-포맷-선택" class="nav-link" data-scroll-target="#파일-포맷-선택"><span class="toc-section-number">8.1.2</span>  파일 포맷 선택</a></li>
+  <li><a href="#헤더-포함여부-선택" id="toc-헤더-포함여부-선택" class="nav-link" data-scroll-target="#헤더-포함여부-선택"><span class="toc-section-number">8.1.3</span>  헤더 포함여부 선택</a></li>
+  <li><a href="#구분자-선택" id="toc-구분자-선택" class="nav-link" data-scroll-target="#구분자-선택"><span class="toc-section-number">8.1.4</span>  구분자 선택</a></li>
+  <li><a href="#인용문자-선택" id="toc-인용문자-선택" class="nav-link" data-scroll-target="#인용문자-선택"><span class="toc-section-number">8.1.5</span>  인용문자 선택</a></li>
+  <li><a href="#대상-시트번호-선택" id="toc-대상-시트번호-선택" class="nav-link" data-scroll-target="#대상-시트번호-선택"><span class="toc-section-number">8.1.6</span>  대상 시트번호 선택</a></li>
+  <li><a href="#파일-선택" id="toc-파일-선택" class="nav-link" data-scroll-target="#파일-선택"><span class="toc-section-number">8.1.7</span>  파일 선택</a></li>
+  <li><a href="#데이터셋의-메타정보-입력" id="toc-데이터셋의-메타정보-입력" class="nav-link" data-scroll-target="#데이터셋의-메타정보-입력"><span class="toc-section-number">8.1.8</span>  데이터셋의 메타정보 입력</a></li>
+  <li><a href="#데이터-업로드-하기" id="toc-데이터-업로드-하기" class="nav-link" data-scroll-target="#데이터-업로드-하기"><span class="toc-section-number">8.1.9</span>  데이터 업로드 하기</a></li>
+  </ul></li>
+  <li><a href="#데이터-관리하기" id="toc-데이터-관리하기" class="nav-link" data-scroll-target="#데이터-관리하기"><span class="toc-section-number">8.2</span>  데이터 관리하기</a>
+  <ul class="collapse">
+  <li><a href="#데이터셋-살펴보기" id="toc-데이터셋-살펴보기" class="nav-link" data-scroll-target="#데이터셋-살펴보기"><span class="toc-section-number">8.2.1</span>  데이터셋 살펴보기</a></li>
+  <li><a href="#데이터셋-삭제하기" id="toc-데이터셋-삭제하기" class="nav-link" data-scroll-target="#데이터셋-삭제하기"><span class="toc-section-number">8.2.2</span>  데이터셋 삭제하기</a></li>
+  <li><a href="#데이터셋-편집하기" id="toc-데이터셋-편집하기" class="nav-link" data-scroll-target="#데이터셋-편집하기"><span class="toc-section-number">8.2.3</span>  데이터셋 편집하기</a></li>
+  <li><a href="#데이터셋-다운로드하기" id="toc-데이터셋-다운로드하기" class="nav-link" data-scroll-target="#데이터셋-다운로드하기"><span class="toc-section-number">8.2.4</span>  데이터셋 다운로드하기</a></li>
+  <li><a href="#모든-데이터셋-다운로드하기" id="toc-모든-데이터셋-다운로드하기" class="nav-link" data-scroll-target="#모든-데이터셋-다운로드하기"><span class="toc-section-number">8.2.5</span>  모든 데이터셋 다운로드하기</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">데이터 준비</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>분석을 수행할 데이터 파일을 BitStat에 업로드하는 방법을 다룹니다. 업로드된 데이터셋을 편집, 삭제, 다운로드하는 등의 관리 기능도 배웁니다.</p>
+<section id="데이터-준비-기능" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="데이터-준비-기능"><span class="header-section-number">8.1</span> 데이터 준비 기능</h2>
+<p>데이터 준비는 <strong>데이터 업로드</strong>와 <strong>데이터셋 관리</strong> 기능을 제공합니다.</p>
+<section id="데이터-업로드하기" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="데이터-업로드하기"><span class="header-section-number">8.1.1</span> 데이터 업로드하기</h3>
+<p>분석할 데이터 파일을 분석하기 위해서 BitStat에 업로드합니다.</p>
+<p>현재 지원하는 데이터 파일은 다음과 같습니다.</p>
+<ul>
+<li>CSV<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> 파일
+<ul>
+<li>컴마로 컬럼을 구분하는 텍스트 파일</li>
+<li>TSV(탭문자로 컬럼을 구분한) 파일 등 화이트 스페이스로 컬럼을 구분한 파일도 지원</li>
+<li>세미콜론(;)으로 구분하는 텍스트 파일도 지원</li>
+</ul></li>
+<li>EXCEL 파일</li>
+<li>R 데이터 파일</li>
+</ul>
+<p>BitStat를 구동하면 다음과 같은 데이터 업로드 화면이 출력됩니다. 왼쪽 메뉴의 데이터를 클릭해도 해당 화면이 출력됩니다.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/BitStat/upload_data.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">데이터 업로드 화면</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="파일-포맷-선택" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="파일-포맷-선택"><span class="header-section-number">8.1.2</span> 파일 포맷 선택</h3>
+<p>파일 포맷을 선택하기 위해서는 CSV 파일, EXCEL 파일, R 데이터 파일을 의미하는 아이콘으로 표현한 <code>파일 포맷</code> 레디오 버튼의 아이콘 이미지를 클릭합니다. 기본값은 CSV 파일로 선택되어 있습니다.</p>
+<p>레디오 버튼의 값이 바뀔때마다 다이얼로그 화면의 위젯이 바뀝니다. 이것은 파일의 종류별로 사용자에게 입력받을 정보에 차이가 있기 때문입니다.</p>
+</section>
+<section id="헤더-포함여부-선택" class="level3" data-number="8.1.3">
+<h3 data-number="8.1.3" class="anchored" data-anchor-id="헤더-포함여부-선택"><span class="header-section-number">8.1.3</span> 헤더 포함여부 선택</h3>
+<p>CSV 파일과 EXCEL 파일의 경우에는 데이터에 첫째 줄이 헤더인지 헤더가 아닌지를 알려줘야 합니다. <code>헤더 포함 여부</code> 체크박스에 헤더 포함여부를 선택합니다. 기본값은 체크되어 있습니다.</p>
+<p><code>헤더 포함 여부</code>를 체크하고 해제함에 따라 오른쪽 <code>샘플 데이터 미리보기</code>의 내용이 바뀝니다. 그러므로 원하는 결과가 미리보기에 출력되도록 값을 선택합니다.</p>
+</section>
+<section id="구분자-선택" class="level3" data-number="8.1.4">
+<h3 data-number="8.1.4" class="anchored" data-anchor-id="구분자-선택"><span class="header-section-number">8.1.4</span> 구분자 선택</h3>
+<p><code>구분자</code> 레디오 버튼은 파일 포맷에서 CSV 파일을 선택했을 때 나타납니다. 즉, 파일에서 컬럼을 구분하는 구분자(seperator)를 선택합니다. 기본값은 CSV 파일을 의미하는 컴마가 선택됩니다.</p>
+<p><code>헤더 포함여부</code>와 마찬가지로 원하는 결과가 미리보기에 출력되도록 값을 선택합니다.</p>
+</section>
+<section id="인용문자-선택" class="level3" data-number="8.1.5">
+<h3 data-number="8.1.5" class="anchored" data-anchor-id="인용문자-선택"><span class="header-section-number">8.1.5</span> 인용문자 선택</h3>
+<p>CSV 파일의 경우에는(TSV, 세미콜론 구분 파일 포함) 한 가지 이슈가 있습니다. 컬럼의 데이터 중에서 구분자로 사용하는 컴마(탭, 세미콜론)이 포함되어 있을 경우에는 데이터가 정상적으로 업로드 되지 않습니다. 어떤 것이 데이터의 컴마이고 어떤 것이 구분자로서의 컴마인지 알 수 없기 때문입니다. 이 경우에는 인용 문자로 컬럼 데이터를 감싸서 인용문자 안에 포함된 구분자 문자가 구분자가 아님을 알려 줘야 합니다. 이것은 특정 문자를 사용해서 컬럼을 구분하는 파일을 공유하는 사람들과 관련 프로그램에서 따르는 암묵적인 룰입니다.</p>
+<p>만약 인용문자를 데이터에 포함된 구분자를 무효화하기 위해 인용문자를 사용했을 경우에는 <code>인용문자</code> 레디오 버튼에서 해당 인용문자를 선택합니다.</p>
+<p><br></p>
+<div class="cell">
+
+</div>
+</section>
+<section id="대상-시트번호-선택" class="level3" data-number="8.1.6">
+<h3 data-number="8.1.6" class="anchored" data-anchor-id="대상-시트번호-선택"><span class="header-section-number">8.1.6</span> 대상 시트번호 선택</h3>
+<p>EXCEL 파일의 경우에는 업로드할 데이터가 포함된 시트번호를 지정해야 한다. <code>대상 시트번호</code> 숫자 입력기는 데이터가 포함된 시트의 번호를 선택합니다.</p>
+</section>
+<section id="파일-선택" class="level3" data-number="8.1.7">
+<h3 data-number="8.1.7" class="anchored" data-anchor-id="파일-선택"><span class="header-section-number">8.1.7</span> 파일 선택</h3>
+<p>파일의 특성을 선택한 후, <code>파일선택</code>을 눌러 사용자 컴퓨터에 있는 업로드할 파일을 선택합니다.</p>
+<p>데이터 파일 이름을 선택하면 자동으로 몇 건의 데이터 파일을 읽어 오른쪽의 <code>샘플 데이터 미리보기</code>에 표시됩니다. 결과에 따라 파일의 특성을 선택하는 입력 위젯을 바꿔서 원하는 결과가 <code>샘플 데이터 미리보기</code>에 표현되도록 유도합니다.</p>
+</section>
+<section id="데이터셋의-메타정보-입력" class="level3" data-number="8.1.8">
+<h3 data-number="8.1.8" class="anchored" data-anchor-id="데이터셋의-메타정보-입력"><span class="header-section-number">8.1.8</span> 데이터셋의 메타정보 입력</h3>
+<p><code>샘플 데이터 미리보기</code>에 표현된 결과가 정상이라면, BitStat에 저장할 데이터셋의 정보를 기술합니다.</p>
+<section id="데이터셋-이름" class="level4" data-number="8.1.8.1">
+<h4 data-number="8.1.8.1" class="anchored" data-anchor-id="데이터셋-이름"><span class="header-section-number">8.1.8.1</span> 데이터셋 이름</h4>
+<p><code>데이터셋 이름</code> 텍스트 입력기에 BitStat에서 불려질 데이터셋 이름을 기술합니다. 데이터셋 이름은 중복을 허용하지만, 가급적 유일값이어야 합니다.</p>
+</section>
+<section id="데이터셋-설명" class="level4" data-number="8.1.8.2">
+<h4 data-number="8.1.8.2" class="anchored" data-anchor-id="데이터셋-설명"><span class="header-section-number">8.1.8.2</span> 데이터셋 설명</h4>
+<p><code>데이터셋 설명</code> 텍스트 입력기에 해당 데이터셋을 설명하는 내용을 입력합니다. 가급적 상세하게 입력하는 것이 나중에 데이터를 유추하는데 도움이 됩니다.</p>
+</section>
+</section>
+<section id="데이터-업로드-하기" class="level3" data-number="8.1.9">
+<h3 data-number="8.1.9" class="anchored" data-anchor-id="데이터-업로드-하기"><span class="header-section-number">8.1.9</span> 데이터 업로드 하기</h3>
+<p>데이터셋의 메타정보를 입력한 후 <code>저장</code> 버튼을 눌러 데이터 파일을 BitStat에 데이터셋으로 저장합니다.</p>
+</section>
+</section>
+<section id="데이터-관리하기" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="데이터-관리하기"><span class="header-section-number">8.2</span> 데이터 관리하기</h2>
+<p>BitStat은 분석할 데이터 파일이 업로된 후에 데이터셋을 관리하는 몇 가지 기능을 제공합니다.</p>
+<p>현재 지원하는 데이터 관리 기능은 다음과 같습니다.</p>
+<ul>
+<li>데이터셋 살펴보기
+<ul>
+<li>데이터 건수, 변수 개수 및 데이터셋 이름, 설명 보기</li>
+<li>변수 이름과 데이터 타입</li>
+<li>샘플 데이터 보기</li>
+</ul></li>
+<li>데이터셋 변경
+<ul>
+<li>데이터셋 이름, 설명 변경</li>
+</ul></li>
+<li>데이터셋 삭제</li>
+<li>데이터셋 다운로드
+<ul>
+<li>CSV 파일, EXCEL 파일, R 데이터 파일</li>
+</ul></li>
+<li>모든 데이터셋 다운로드
+<ul>
+<li>R 데이터 파일</li>
+</ul></li>
+</ul>
+<section id="데이터셋-살펴보기" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="데이터셋-살펴보기"><span class="header-section-number">8.2.1</span> 데이터셋 살펴보기</h3>
+<p><code>데이터셋 관리</code> 탭을 누르면 다음과 같은 <code>데이터셋 목록</code> 화면으로 전환합니다.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/BitStat/manage_data.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">데이터셋 관리 화면</figcaption><p></p>
+</figure>
+</div>
+<p><code>데이터셋 목록</code>은 업로드된 데이터셋의 목록을 보여줍니다. 여기에는 데이터셋 이름, 사령, 관측치 개수, 변수 개수 및 데이터셋 아이디를 포함합니다. 그리고 데이터셋 이름의 삼각형을 클릭하면, 다음 그림처럼 <code>변수 정보</code>와 <code>샘플 데이터</code>를 보여줍니다. 탭을 눌러 <code>변수 정보</code>와 <code>샘플 데이터</code>를 조회할 수 있습니다.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/BitStat/view_data.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">데이터셋 상세 화면</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="데이터셋-삭제하기" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="데이터셋-삭제하기"><span class="header-section-number">8.2.2</span> 데이터셋 삭제하기</h3>
+<p>만약에 업로드된 데이터셋이 필요가 없어질 경우에는 해당 데이터셋 이름 옆의 레디오 버튼을 선택한 후, <code>데이터셋 삭제</code> 버튼을 눌러 해당 데이터셋을 제거합니다.</p>
+</section>
+<section id="데이터셋-편집하기" class="level3" data-number="8.2.3">
+<h3 data-number="8.2.3" class="anchored" data-anchor-id="데이터셋-편집하기"><span class="header-section-number">8.2.3</span> 데이터셋 편집하기</h3>
+<p>데이터셋의 이름이나 설명 내용을 수정할 필요가 있을 경우에는 데이터셋 이름 옆의 레디오 버튼을 선택한 후, <code>데이터셋 편집</code> 버튼을 누릅니다. 그러면 다음처럼 데이터셋 편집 화면이 나타납니다. 이 화면에서 원하는 정보로 변경 후 <code>수정</code> 버튼을 누르면 해당 정보가 변경됩니다.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/BitStat/edit_data.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">데이터셋 편집 화면</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="데이터셋-다운로드하기" class="level3" data-number="8.2.4">
+<h3 data-number="8.2.4" class="anchored" data-anchor-id="데이터셋-다운로드하기"><span class="header-section-number">8.2.4</span> 데이터셋 다운로드하기</h3>
+<p>데이터셋을 다운로드하려면 데이터셋 이름 옆의 레디오 버튼을 선택한 후, <code>데이터셋 받기</code> 버튼을 누릅니다. 그러면 다음처럼 데이터셋 다운로드 화면이 나타납니다. 이 화면에서 다운로드할 파일의 포맷, 파일이름을 선택한 후 <code>파일받기</code> 버튼을 누르면 해당 데이터셋을 다운로드합니다.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/BitStat/download_data.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">데이터셋 다운로드 화면</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="모든-데이터셋-다운로드하기" class="level3" data-number="8.2.5">
+<h3 data-number="8.2.5" class="anchored" data-anchor-id="모든-데이터셋-다운로드하기"><span class="header-section-number">8.2.5</span> 모든 데이터셋 다운로드하기</h3>
+<p>경우에 따라서는 업로드한 모든 데이터셋을 다운로드할 필요가 있습니다. 이 경우에는 <code>전체 다운로드</code> 버튼을 누릅니다. 그러면 다음처럼 전체 데이터셋 다운로드 화면이 나타납니다. 이 화면에서 다운로드할 파일이름을 선택한 후 <code>파일받기</code> 버튼을 누르면 해당 전체 데이터셋이 R 데이터 파일로 다운로드됩니다.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/BitStat/download_all.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">모든 데이터셋 다운로드 화면</figcaption><p></p>
+</figure>
+</div>
+
+
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>CSV는 Comman-Seperated Values의 약어<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "복사완료!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "복사완료!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./part_II_02_pdf.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">한글 PDF</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./BitStat_02_descriptive_summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">집계표</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

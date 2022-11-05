@@ -6,8 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="이광춘 / 한국 R 사용자회">
-<meta name="dcterms.date" content="2022-11-04">
+<meta name="author" content="한국 R 사용자회">
 
 <title>데이터 문해력과 디지털 글쓰기</title>
 <style>
@@ -21,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
 }
 </style>
 
@@ -132,12 +150,27 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part_II_01_fonts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">한글 글꼴</span></a>
+  <a href="./markdown_01_mess.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">심각한 현재 상황</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part_II_02_pdf.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">한글 PDF</span></a>
+  <a href="./markdown_02_markdown.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">마크다운 기초</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markdown_03_advanced.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">고급 마크다운</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./part_II_01_fonts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">한글 글꼴</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./part_II_02_pdf.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">한글 PDF</span></a>
   </div>
 </li>
       </ul>
@@ -152,7 +185,17 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bitstat.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">빛에듀</span></a>
+  <a href="./BitStat_01_data_prepare.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">데이터 준비</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BitStat_02_descriptive_summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">집계표</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BitStat_03_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">상관관계</span></a>
   </div>
 </li>
       </ul>
@@ -191,14 +234,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">저자</div>
     <div class="quarto-title-meta-contents">
-             <p>이광춘 / 한국 R 사용자회 </p>
+             <p>한국 R 사용자회 </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">공개</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 4, 2022</p>
+      <p class="date">2022년 11월 05일</p>
     </div>
   </div>
   
@@ -211,8 +254,28 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="서문" class="level1 unnumbered">
 <p><img src="koRea_logo.png" title="데이터 문해력과 디지털 글쓰기" class="quarto-cover-image img-fluid"></p><h1 class="unnumbered">서문</h1>
+<p>사단법인 한국 알(R) 사용자회는 디지털 불평등 해소와 통계 대중화를 위해 2022년 설립되었습니다. 오픈 통계 패키지(BitStat) 개발을 비롯하여 최근에 데이터 사이언스 관련 교재도 함께 제작하여 발간하는 작업을 수행하고 있습니다.</p>
+<p>커뮤니티 활동으로 <a href="https://www.meetup.com/seoul-r-meetup/">서울 R 미트업</a>을 매월 텍스트 마이닝, 재무회계, Shiny 앱개발, 바이오 헬스케어 등 주제를 달리하여 개최하고 있습니다. 2017년부터 시작된 서울 R 미트업 발표자료는 <a href="https://tidyverse-korea.github.io/seoul-R/">저장소</a>에서 확인할 수 있습니다.</p>
+<p>다음은 한국 R 사용자회에서 공공에 오픈한 전자책 콘텐츠입니다.</p>
+<p>그 첫번째 결과물로 John Fox 교수님이 개발한 설치형 오픈 통계 패키지 <code>Rcmdr</code><span class="citation" data-cites="fox2016using">(<a href="references.html#ref-fox2016using" role="doc-biblioref">Fox 2016</a>)</span> <span class="citation" data-cites="rcmdr2022manual">(<a href="references.html#ref-rcmdr2022manual" role="doc-biblioref">Fox and Bouchet-Valat 2021</a>)</span> <span class="citation" data-cites="rcmdr2005paper">(<a href="references.html#ref-rcmdr2005paper" role="doc-biblioref">Fox 2005</a>)</span> 를 신종화 님께서 한글화 및 문서화에 10년 넘게 기여해주신 한국알사용자회 저작권을 흔쾌히 허락해 주셔서 <a href="https://r2bit.com/Rcmdr/">설치형 오픈 통계 패키지 - <code>Rcmdr</code></a>로 세상에 나왔습니다.</p>
+<p>두번째 활동을 여기저기 산재되어 있던 시각화 관련 자료를 묶어 <strong><a href="https://r2bit.com/book_viz/">데이터 시각화(Data Visualization)</a></strong>를 전자책 형태로 공개하였고, 데이터 분석 관련 저술을 이어 진행하게 되었습니다.</p>
+<p>세번째 활동으로 데이터 사이언스가 하나로 구성되지 않은 것을 간파하고 데이터 사이언스를 지탱하는 기본기술을 5가지로 정리한 <strong><a href="https://r2bit.com/book_analytics/">데이터 과학을 지탱하는 기본기</a></strong> 전자책을 공개했습니다.</p>
+<p>네번째 활동으로 “데이터 과학 프로그래밍” 저작을 위해 <a href="https://www.py4e.com/book">“Python for Everybody”</a>와 <a href="http://www.py4inf.com/">Python for Informatics: Exploring Information</a>에 기반하여 2015년부터 시작된 <a href="http://aispiration.com/pythonlearn-kr/">모두를 위한 파이썬</a> 한글화 프로젝트를 추진했습니다. <a href="https://r2bit.com/book_programming/">데이터 과학 프로그래밍</a> 웹사이트에서 프로그래밍 교재를 확인할 수 있다.</p>
+<p>그외, 데이터 분석 언어 R에 관한 지식을 신속히 습득하여 독자들이 갖고 있는 문제에 접목시키고자 하시는 분은 한국 알(R) 사용자회에서 번역하여 공개한 <a href="https://r2bit.shinyapps.io/rbootcamp/">R 신병훈련소(Bootcamp)</a> 과정을 추천드립니다.</p>
+<p>“데이터 사이언스 프로그래밍” 저작물을 비롯한 한국 알(R) 사용자회 저작물은 크리에이티브 커먼즈 <a href="http://ccl.cckorea.org/about/">저작자표시-비영리-동일조건 변경 허락 (BY-NC-SA)</a> 라이선스를 준용하고 있습니다.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-rcmdr2005paper" class="csl-entry" role="doc-biblioentry">
+Fox, John. 2005. <span>“The <span>R</span> <span>C</span>ommander: A Basic Statistics Graphical User Interface to <span>R</span>.”</span> <em>Journal of Statistical Software</em> 14 (9): 1–42. <a href="https://doi.org/10.18637/jss.v014.i09">https://doi.org/10.18637/jss.v014.i09</a>.
+</div>
+<div id="ref-fox2016using" class="csl-entry" role="doc-biblioentry">
+———. 2016. <em>Using the r Commander: A Point-and-Click Interface for r</em>. Chapman; Hall/CRC.
+</div>
+<div id="ref-rcmdr2022manual" class="csl-entry" role="doc-biblioentry">
+Fox, John, and Milan Bouchet-Valat. 2021. <em><span>Rcmdr: R Commander</span></em>. <a href="https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/">https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
