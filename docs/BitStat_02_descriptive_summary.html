@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>데이터 문해력과 디지털 글쓰기 - 9&nbsp; 집계표</title>
+<title>데이터 문해력과 디지털 글쓰기 - 10&nbsp; 집계표</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">집계표</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">집계표</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -157,26 +157,34 @@ ul.task-list li input[type="checkbox"] {
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">빛에듀(Bit-Edu)</span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">빛에듀(Bit-Edu)</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">통계패키지(BitStat)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BitStat_01_data_prepare.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">데이터 준비</span></a>
+  <a href="./BitStat_00_install.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">빛스탯 오픈 통계 패키지</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BitStat_02_descriptive_summary.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">집계표</span></a>
+  <a href="./BitStat_01_data_prepare.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">데이터 준비</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BitStat_03_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">상관관계</span></a>
+  <a href="./BitStat_02_descriptive_summary.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">집계표</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BitStat_03_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">상관관계</span></a>
   </div>
 </li>
       </ul>
@@ -195,11 +203,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">목차</h2>
    
   <ul>
-  <li><a href="#집계표-기능" id="toc-집계표-기능" class="nav-link active" data-scroll-target="#집계표-기능"><span class="toc-section-number">9.1</span>  집계표 기능</a>
+  <li><a href="#집계표-기능" id="toc-집계표-기능" class="nav-link active" data-scroll-target="#집계표-기능"><span class="toc-section-number">10.1</span>  집계표 기능</a>
   <ul class="collapse">
-  <li><a href="#수치형-변수-통계표" id="toc-수치형-변수-통계표" class="nav-link" data-scroll-target="#수치형-변수-통계표"><span class="toc-section-number">9.1.1</span>  수치형 변수 통계표</a></li>
-  <li><a href="#범주형-변수-돗수분포표" id="toc-범주형-변수-돗수분포표" class="nav-link" data-scroll-target="#범주형-변수-돗수분포표"><span class="toc-section-number">9.1.2</span>  범주형 변수 돗수분포표</a></li>
-  <li><a href="#범주형-변수-분할표" id="toc-범주형-변수-분할표" class="nav-link" data-scroll-target="#범주형-변수-분할표"><span class="toc-section-number">9.1.3</span>  범주형 변수 분할표</a></li>
+  <li><a href="#수치형-변수-통계표" id="toc-수치형-변수-통계표" class="nav-link" data-scroll-target="#수치형-변수-통계표"><span class="toc-section-number">10.1.1</span>  수치형 변수 통계표</a></li>
+  <li><a href="#범주형-변수-돗수분포표" id="toc-범주형-변수-돗수분포표" class="nav-link" data-scroll-target="#범주형-변수-돗수분포표"><span class="toc-section-number">10.1.2</span>  범주형 변수 돗수분포표</a></li>
+  <li><a href="#범주형-변수-분할표" id="toc-범주형-변수-분할표" class="nav-link" data-scroll-target="#범주형-변수-분할표"><span class="toc-section-number">10.1.3</span>  범주형 변수 분할표</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -209,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">집계표</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">집계표</span></h1>
 </div>
 
 
@@ -225,21 +233,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>업로드한 데이터나 저장된 데이터를 집계하는 방법을 다룹니다. 수치형 변수와 범주형 변수의 특성별로 요약 집계와 시각화를 수행하는 방법을 설명합니다.</p>
-<section id="집계표-기능" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="집계표-기능"><span class="header-section-number">9.1</span> 집계표 기능</h2>
+<section id="집계표-기능" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="집계표-기능"><span class="header-section-number">10.1</span> 집계표 기능</h2>
 <p><code>집계표</code> 메뉴에서는 수치형 변수의 <strong>통계표</strong>와 범주형 변수의 <strong>돗수분포표, 분할표</strong>를 작성하고 시각화합니다.</p>
 <ul>
 <li>수치형 변수 통계표</li>
 <li>범주형 변수 돗수분포표</li>
 <li>범주형 변수 분할표</li>
 </ul>
-<section id="수치형-변수-통계표" class="level3" data-number="9.1.1">
-<h3 data-number="9.1.1" class="anchored" data-anchor-id="수치형-변수-통계표"><span class="header-section-number">9.1.1</span> 수치형 변수 통계표</h3>
+<section id="수치형-변수-통계표" class="level3" data-number="10.1.1">
+<h3 data-number="10.1.1" class="anchored" data-anchor-id="수치형-변수-통계표"><span class="header-section-number">10.1.1</span> 수치형 변수 통계표</h3>
 <p>수치형 변수의 통계표를 작성하고 분포를 시각화합니다.</p>
 <p>통계표 기능은 <strong>기술통계 &gt; 집계표 &gt; 수치형 변수 통계표</strong>의 메뉴 체계로 접근합니다.</p>
 <p><br></p>
-<section id="집계를-위한-입력-위젯" class="level4" data-number="9.1.1.1">
-<h4 data-number="9.1.1.1" class="anchored" data-anchor-id="집계를-위한-입력-위젯"><span class="header-section-number">9.1.1.1</span> 집계를 위한 입력 위젯</h4>
+<section id="집계를-위한-입력-위젯" class="level4" data-number="10.1.1.1">
+<h4 data-number="10.1.1.1" class="anchored" data-anchor-id="집계를-위한-입력-위젯"><span class="header-section-number">10.1.1.1</span> 집계를 위한 입력 위젯</h4>
 <ul>
 <li>대상변수 선택 방법:
 <ul>
@@ -294,8 +302,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><br></p>
 </section>
-<section id="기본-통계표-출력" class="level4" data-number="9.1.1.2">
-<h4 data-number="9.1.1.2" class="anchored" data-anchor-id="기본-통계표-출력"><span class="header-section-number">9.1.1.2</span> 기본 통계표 출력</h4>
+<section id="기본-통계표-출력" class="level4" data-number="10.1.1.2">
+<h4 data-number="10.1.1.2" class="anchored" data-anchor-id="기본-통계표-출력"><span class="header-section-number">10.1.1.2</span> 기본 통계표 출력</h4>
 <p><code>수치형 변수 통계표</code>에서 통계표를 출력하는 방법은 <code>데이터셋:</code> 리스트박스에서 <code>diamonds</code> 데이터를 선택을 전제로 소개합니다.</p>
 <p>기술통계 &gt; 집계표 &gt; 수치형 변수 통계표의 기본 설정으로 <code>실행</code> 버튼을 클릭하면 오른쪽 결과 영역에 <strong>수치형 변수 집계 테이블</strong>이 출력됩니다.</p>
 <p>이 기본 설정은 다음과 같습니다.</p>
@@ -325,8 +333,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 </section>
-<section id="사용자-변수선택-통계표-출력" class="level4" data-number="9.1.1.3">
-<h4 data-number="9.1.1.3" class="anchored" data-anchor-id="사용자-변수선택-통계표-출력"><span class="header-section-number">9.1.1.3</span> 사용자 변수선택 통계표 출력</h4>
+<section id="사용자-변수선택-통계표-출력" class="level4" data-number="10.1.1.3">
+<h4 data-number="10.1.1.3" class="anchored" data-anchor-id="사용자-변수선택-통계표-출력"><span class="header-section-number">10.1.1.3</span> 사용자 변수선택 통계표 출력</h4>
 <p>전체 수치형 변수가 아닌, 사용자가 출력할 수치형 변수를 선택할 수 있습니다. 이 예제에서는 <code>caret</code>, <code>depth</code>, <code>table</code>, <code>price</code> 변수를 선택합니다.</p>
 <p><img src="images/BitStat/table_select_num_variable.png" class="img-fluid" alt="수치형 변수 목록 선택 위젯"> <br></p>
 <p>이제 집계 테이블을 위한 설정은 다음과 같이 정의되었습니다.</p>
@@ -361,8 +369,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 </section>
-<section id="범주별-수치형-변수-통계표-출력" class="level4" data-number="9.1.1.4">
-<h4 data-number="9.1.1.4" class="anchored" data-anchor-id="범주별-수치형-변수-통계표-출력"><span class="header-section-number">9.1.1.4</span> 범주별 수치형 변수 통계표 출력</h4>
+<section id="범주별-수치형-변수-통계표-출력" class="level4" data-number="10.1.1.4">
+<h4 data-number="10.1.1.4" class="anchored" data-anchor-id="범주별-수치형-변수-통계표-출력"><span class="header-section-number">10.1.1.4</span> 범주별 수치형 변수 통계표 출력</h4>
 <p><code>범주별 계산</code> 체크 박스를 체크하면, 선택한 범주형 변수의 수준(levels)별로 수치형 변수의 통계표를 계산할 수 있습니다.</p>
 <p>다음 그림처럼 <code>범주별 계산</code> 체크 박스를 체크하여 나타난 <code>범주형 변수 목록:</code>에서 범주형 변수인 <code>cut</code>을 선택합니다.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -412,8 +420,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 </section>
-<section id="시각화와-함께-통계표-출력" class="level4" data-number="9.1.1.5">
-<h4 data-number="9.1.1.5" class="anchored" data-anchor-id="시각화와-함께-통계표-출력"><span class="header-section-number">9.1.1.5</span> 시각화와 함께 통계표 출력</h4>
+<section id="시각화와-함께-통계표-출력" class="level4" data-number="10.1.1.5">
+<h4 data-number="10.1.1.5" class="anchored" data-anchor-id="시각화와-함께-통계표-출력"><span class="header-section-number">10.1.1.5</span> 시각화와 함께 통계표 출력</h4>
 <p>집계 테이블은 여러 통계량으로 구성된 테이블이기 때문에, 해당 수치형 변수의 분포를 파악는 것은 쉽지 않습니다. 그런데 시각화와 함께 한다면 수치형 변수의 분포를 파악하기 수월해집니다.</p>
 <p><code>시각화 여부</code> 체크 박스를 체크하면, 수치형 변수의 분포를 파악할 수 있는 <code>밀도플롯(density plot)</code>을 함께 출력할 수 있습니다.</p>
 <p>다음은 <code>시각화 여부</code> 체크 박스를 체크한 경우의 결과입니다. 집계 테이블에 출력된 수치형 변수의 개수만큼의 플롯이 출력됩니다.</p>
@@ -438,13 +446,13 @@ ul.task-list li input[type="checkbox"] {
 <p><br></p>
 </section>
 </section>
-<section id="범주형-변수-돗수분포표" class="level3" data-number="9.1.2">
-<h3 data-number="9.1.2" class="anchored" data-anchor-id="범주형-변수-돗수분포표"><span class="header-section-number">9.1.2</span> 범주형 변수 돗수분포표</h3>
+<section id="범주형-변수-돗수분포표" class="level3" data-number="10.1.2">
+<h3 data-number="10.1.2" class="anchored" data-anchor-id="범주형-변수-돗수분포표"><span class="header-section-number">10.1.2</span> 범주형 변수 돗수분포표</h3>
 <p>범주형 변수의 돗수분포표(frequency table)를 작성하고 분포를 시각화합니다.</p>
 <p>범주형 변수 돗수분포표 기능은 <strong>기술통계 &gt; 집계표 &gt; 범주형 변수 돗수분포표</strong>의 메뉴 체계로 접근합니다.</p>
 <p><br></p>
-<section id="돗수분포표를-위한-입력-위젯" class="level4" data-number="9.1.2.1">
-<h4 data-number="9.1.2.1" class="anchored" data-anchor-id="돗수분포표를-위한-입력-위젯"><span class="header-section-number">9.1.2.1</span> 돗수분포표를 위한 입력 위젯</h4>
+<section id="돗수분포표를-위한-입력-위젯" class="level4" data-number="10.1.2.1">
+<h4 data-number="10.1.2.1" class="anchored" data-anchor-id="돗수분포표를-위한-입력-위젯"><span class="header-section-number">10.1.2.1</span> 돗수분포표를 위한 입력 위젯</h4>
 <ul>
 <li>대상변수 선택 방법:
 <ul>
@@ -473,8 +481,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><br></p>
 </section>
-<section id="기본-돗수분포표-출력" class="level4" data-number="9.1.2.2">
-<h4 data-number="9.1.2.2" class="anchored" data-anchor-id="기본-돗수분포표-출력"><span class="header-section-number">9.1.2.2</span> 기본 돗수분포표 출력</h4>
+<section id="기본-돗수분포표-출력" class="level4" data-number="10.1.2.2">
+<h4 data-number="10.1.2.2" class="anchored" data-anchor-id="기본-돗수분포표-출력"><span class="header-section-number">10.1.2.2</span> 기본 돗수분포표 출력</h4>
 <p><code>범주형 변수 돗수분포표</code>에서 돗수분포표를 출력하는 방법은 <code>데이터셋:</code> 리스트박스에서 <code>diamonds</code> 데이터를 선택을 전제로 소개합니다.</p>
 <p>기술통계 &gt; 집계표 &gt; 범주형 변수 돗수분포표의 기본 설정으로 <code>실행</code> 버튼을 클릭하면 오른쪽 결과 영역에 <strong>범주형 변수의 돗수분포표</strong>가 출력됩니다.</p>
 <p>이 기본 설정은 다음과 같습니다.</p>
@@ -496,8 +504,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 </section>
-<section id="시각화와-함께-돗수분포표-출력" class="level4" data-number="9.1.2.3">
-<h4 data-number="9.1.2.3" class="anchored" data-anchor-id="시각화와-함께-돗수분포표-출력"><span class="header-section-number">9.1.2.3</span> 시각화와 함께 돗수분포표 출력</h4>
+<section id="시각화와-함께-돗수분포표-출력" class="level4" data-number="10.1.2.3">
+<h4 data-number="10.1.2.3" class="anchored" data-anchor-id="시각화와-함께-돗수분포표-출력"><span class="header-section-number">10.1.2.3</span> 시각화와 함께 돗수분포표 출력</h4>
 <p><code>시각화 여부</code> 체크 박스를 체크하면, 범주형 변수의 분포를 파악할 수 있는 <code>막대그래프(bar plot)</code>을 함께 출력할 수 있습니다.</p>
 <p>다음은 <code>시각화 여부</code> 체크 박스를 체크한 경우의 결과입니다. 돗수분포표로 범주형 변수의 분포를 파악할 수 있는 플롯이 출력됩니다.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -508,13 +516,13 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 </section>
-<section id="범주형-변수-분할표" class="level3" data-number="9.1.3">
-<h3 data-number="9.1.3" class="anchored" data-anchor-id="범주형-변수-분할표"><span class="header-section-number">9.1.3</span> 범주형 변수 분할표</h3>
+<section id="범주형-변수-분할표" class="level3" data-number="10.1.3">
+<h3 data-number="10.1.3" class="anchored" data-anchor-id="범주형-변수-분할표"><span class="header-section-number">10.1.3</span> 범주형 변수 분할표</h3>
 <p>두 범주형 변수의 분할표(contingency table)를 작성하고 분포를 시각화합니다.</p>
 <p>통계표 기능은 <strong>기술통계 &gt; 집계표 &gt; 범주형 변수 분할표</strong>의 메뉴 체계로 접근합니다.</p>
 <p><br></p>
-<section id="분할표를-위한-입력-위젯" class="level4" data-number="9.1.3.1">
-<h4 data-number="9.1.3.1" class="anchored" data-anchor-id="분할표를-위한-입력-위젯"><span class="header-section-number">9.1.3.1</span> 분할표를 위한 입력 위젯</h4>
+<section id="분할표를-위한-입력-위젯" class="level4" data-number="10.1.3.1">
+<h4 data-number="10.1.3.1" class="anchored" data-anchor-id="분할표를-위한-입력-위젯"><span class="header-section-number">10.1.3.1</span> 분할표를 위한 입력 위젯</h4>
 <ul>
 <li>행 변수 (한개 선택):
 <ul>
@@ -543,8 +551,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><br></p>
 </section>
-<section id="기본-분할표-출력" class="level4" data-number="9.1.3.2">
-<h4 data-number="9.1.3.2" class="anchored" data-anchor-id="기본-분할표-출력"><span class="header-section-number">9.1.3.2</span> 기본 분할표 출력</h4>
+<section id="기본-분할표-출력" class="level4" data-number="10.1.3.2">
+<h4 data-number="10.1.3.2" class="anchored" data-anchor-id="기본-분할표-출력"><span class="header-section-number">10.1.3.2</span> 기본 분할표 출력</h4>
 <p>기술통계 &gt; 집계표 &gt; 범주형 변수 분할표의 기본 설정으로 <code>실행</code> 버튼을 클릭하면 오른쪽 결과 영역에 <strong>두 범주형 변수의 분할표</strong>가 출력됩니다.</p>
 <p>이 기본 설정은 다음과 같습니다.</p>
 <ul>
@@ -573,8 +581,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 </section>
-<section id="주변합-포함-분할표-출력" class="level4" data-number="9.1.3.3">
-<h4 data-number="9.1.3.3" class="anchored" data-anchor-id="주변합-포함-분할표-출력"><span class="header-section-number">9.1.3.3</span> 주변합 포함 분할표 출력</h4>
+<section id="주변합-포함-분할표-출력" class="level4" data-number="10.1.3.3">
+<h4 data-number="10.1.3.3" class="anchored" data-anchor-id="주변합-포함-분할표-출력"><span class="header-section-number">10.1.3.3</span> 주변합 포함 분할표 출력</h4>
 <p>분할표에 개별 행/열의 집계를 위한 주변 합을 추가할 수 있습니다.</p>
 <ul>
 <li>행 변수 (한개 선택):
@@ -607,8 +615,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 </section>
-<section id="시각화와-함께-분할표-출력" class="level4" data-number="9.1.3.4">
-<h4 data-number="9.1.3.4" class="anchored" data-anchor-id="시각화와-함께-분할표-출력"><span class="header-section-number">9.1.3.4</span> 시각화와 함께 분할표 출력</h4>
+<section id="시각화와-함께-분할표-출력" class="level4" data-number="10.1.3.4">
+<h4 data-number="10.1.3.4" class="anchored" data-anchor-id="시각화와-함께-분할표-출력"><span class="header-section-number">10.1.3.4</span> 시각화와 함께 분할표 출력</h4>
 <p><code>시각화 여부</code> 체크 박스를 체크하면, 두 범주형 변수의 분포를 파악할 수 있는 <code>모자이크플롯(mosaic plot)</code>을 함께 출력할 수 있습니다.</p>
 <p>다음은 <code>시각화 여부</code> 체크 박스를 체크한 경우의 결과입니다. 분할표로 출력된 두 범주형 변수의 분포를 파악할 수 있는 플롯이 출력됩니다.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -760,12 +768,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./BitStat_01_data_prepare.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">데이터 준비</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">데이터 준비</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./BitStat_03_correlation.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">상관관계</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">상관관계</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

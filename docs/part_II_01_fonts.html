@@ -220,26 +220,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">빛에듀(Bit-Edu)</span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">빛에듀(Bit-Edu)</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">통계패키지(BitStat)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BitStat_01_data_prepare.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">데이터 준비</span></a>
+  <a href="./BitStat_00_install.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">빛스탯 오픈 통계 패키지</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BitStat_02_descriptive_summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">집계표</span></a>
+  <a href="./BitStat_01_data_prepare.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">데이터 준비</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BitStat_03_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">상관관계</span></a>
+  <a href="./BitStat_02_descriptive_summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">집계표</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BitStat_03_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">상관관계</span></a>
   </div>
 </li>
       </ul>
@@ -557,7 +565,7 @@ tt, code, pre {
 <span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>  <span class="fu">basic_theme</span>() </span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="lbbrhpiubr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="fqqlxjbwgj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Dokdo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -566,7 +574,7 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#lbbrhpiubr) .gt_table {
+:where(#fqqlxjbwgj) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -591,7 +599,7 @@ html {
   border-left-color: #D3D3D3;
 }
 
-:where(#lbbrhpiubr) .gt_heading {
+:where(#fqqlxjbwgj) .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -603,7 +611,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-:where(#lbbrhpiubr) .gt_title {
+:where(#fqqlxjbwgj) .gt_title {
   color: #333333;
   font-size: 30px;
   font-weight: initial;
@@ -615,7 +623,7 @@ html {
   border-bottom-width: 0;
 }
 
-:where(#lbbrhpiubr) .gt_subtitle {
+:where(#fqqlxjbwgj) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -627,13 +635,13 @@ html {
   border-top-width: 0;
 }
 
-:where(#lbbrhpiubr) .gt_bottom_border {
+:where(#fqqlxjbwgj) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#lbbrhpiubr) .gt_col_headings {
+:where(#fqqlxjbwgj) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -648,7 +656,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-:where(#lbbrhpiubr) .gt_col_heading {
+:where(#fqqlxjbwgj) .gt_col_heading {
   color: #FFFFFF;
   background-color: #0000FF;
   font-size: 20px;
@@ -668,7 +676,7 @@ html {
   overflow-x: hidden;
 }
 
-:where(#lbbrhpiubr) .gt_column_spanner_outer {
+:where(#fqqlxjbwgj) .gt_column_spanner_outer {
   color: #FFFFFF;
   background-color: #0000FF;
   font-size: 20px;
@@ -680,15 +688,15 @@ html {
   padding-right: 4px;
 }
 
-:where(#lbbrhpiubr) .gt_column_spanner_outer:first-child {
+:where(#fqqlxjbwgj) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#lbbrhpiubr) .gt_column_spanner_outer:last-child {
+:where(#fqqlxjbwgj) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#lbbrhpiubr) .gt_column_spanner {
+:where(#fqqlxjbwgj) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -700,7 +708,7 @@ html {
   width: 100%;
 }
 
-:where(#lbbrhpiubr) .gt_group_heading {
+:where(#fqqlxjbwgj) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -725,7 +733,7 @@ html {
   vertical-align: middle;
 }
 
-:where(#lbbrhpiubr) .gt_empty_group_heading {
+:where(#fqqlxjbwgj) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -740,15 +748,15 @@ html {
   vertical-align: middle;
 }
 
-:where(#lbbrhpiubr) .gt_from_md > :first-child {
+:where(#fqqlxjbwgj) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#lbbrhpiubr) .gt_from_md > :last-child {
+:where(#fqqlxjbwgj) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#lbbrhpiubr) .gt_row {
+:where(#fqqlxjbwgj) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -767,7 +775,7 @@ html {
   overflow-x: hidden;
 }
 
-:where(#lbbrhpiubr) .gt_stub {
+:where(#fqqlxjbwgj) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -780,7 +788,7 @@ html {
   padding-right: 5px;
 }
 
-:where(#lbbrhpiubr) .gt_stub_row_group {
+:where(#fqqlxjbwgj) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -794,11 +802,11 @@ html {
   vertical-align: top;
 }
 
-:where(#lbbrhpiubr) .gt_row_group_first td {
+:where(#fqqlxjbwgj) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#lbbrhpiubr) .gt_summary_row {
+:where(#fqqlxjbwgj) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -808,16 +816,16 @@ html {
   padding-right: 5px;
 }
 
-:where(#lbbrhpiubr) .gt_first_summary_row {
+:where(#fqqlxjbwgj) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#lbbrhpiubr) .gt_first_summary_row.thick {
+:where(#fqqlxjbwgj) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#lbbrhpiubr) .gt_last_summary_row {
+:where(#fqqlxjbwgj) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -827,7 +835,7 @@ html {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#lbbrhpiubr) .gt_grand_summary_row {
+:where(#fqqlxjbwgj) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -837,7 +845,7 @@ html {
   padding-right: 5px;
 }
 
-:where(#lbbrhpiubr) .gt_first_grand_summary_row {
+:where(#fqqlxjbwgj) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -847,11 +855,11 @@ html {
   border-top-color: #D3D3D3;
 }
 
-:where(#lbbrhpiubr) .gt_striped {
+:where(#fqqlxjbwgj) .gt_striped {
   background-color: #9678B6;
 }
 
-:where(#lbbrhpiubr) .gt_table_body {
+:where(#fqqlxjbwgj) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -860,7 +868,7 @@ html {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#lbbrhpiubr) .gt_footnotes {
+:where(#fqqlxjbwgj) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -874,7 +882,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-:where(#lbbrhpiubr) .gt_footnote {
+:where(#fqqlxjbwgj) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -883,7 +891,7 @@ html {
   padding-right: 5px;
 }
 
-:where(#lbbrhpiubr) .gt_sourcenotes {
+:where(#fqqlxjbwgj) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -897,7 +905,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-:where(#lbbrhpiubr) .gt_sourcenote {
+:where(#fqqlxjbwgj) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -905,64 +913,64 @@ html {
   padding-right: 5px;
 }
 
-:where(#lbbrhpiubr) .gt_left {
+:where(#fqqlxjbwgj) .gt_left {
   text-align: left;
 }
 
-:where(#lbbrhpiubr) .gt_center {
+:where(#fqqlxjbwgj) .gt_center {
   text-align: center;
 }
 
-:where(#lbbrhpiubr) .gt_right {
+:where(#fqqlxjbwgj) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#lbbrhpiubr) .gt_font_normal {
+:where(#fqqlxjbwgj) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#lbbrhpiubr) .gt_font_bold {
+:where(#fqqlxjbwgj) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#lbbrhpiubr) .gt_font_italic {
+:where(#fqqlxjbwgj) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#lbbrhpiubr) .gt_super {
+:where(#fqqlxjbwgj) .gt_super {
   font-size: 65%;
 }
 
-:where(#lbbrhpiubr) .gt_footnote_marks {
+:where(#fqqlxjbwgj) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#lbbrhpiubr) .gt_asterisk {
+:where(#fqqlxjbwgj) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#lbbrhpiubr) .gt_indent_1 {
+:where(#fqqlxjbwgj) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#lbbrhpiubr) .gt_indent_2 {
+:where(#fqqlxjbwgj) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#lbbrhpiubr) .gt_indent_3 {
+:where(#fqqlxjbwgj) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#lbbrhpiubr) .gt_indent_4 {
+:where(#fqqlxjbwgj) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#lbbrhpiubr) .gt_indent_5 {
+:where(#fqqlxjbwgj) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -982,46 +990,46 @@ html {
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Chinstrap</td>
-<td class="gt_row gt_center">Dream</td>
-<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">42.5</td>
-<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">3350</td></tr>
-    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Gentoo</td>
-<td class="gt_row gt_center">Biscoe</td>
-<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">45.5</td>
-<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">5000</td></tr>
     <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Adelie</td>
 <td class="gt_row gt_center">Dream</td>
-<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">37.2</td>
-<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">3900</td></tr>
+<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">38.1</td>
+<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">3700</td></tr>
+    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Gentoo</td>
+<td class="gt_row gt_center">Biscoe</td>
+<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">46.4</td>
+<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">4700</td></tr>
+    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Chinstrap</td>
+<td class="gt_row gt_center">Dream</td>
+<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">45.9</td>
+<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">3575</td></tr>
+    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Chinstrap</td>
+<td class="gt_row gt_center">Dream</td>
+<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">46.0</td>
+<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">4150</td></tr>
+    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Gentoo</td>
+<td class="gt_row gt_center">Biscoe</td>
+<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">42.8</td>
+<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">4700</td></tr>
+    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Adelie</td>
+<td class="gt_row gt_center">Dream</td>
+<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">36.9</td>
+<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">3500</td></tr>
     <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Chinstrap</td>
 <td class="gt_row gt_center">Dream</td>
 <td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">49.0</td>
 <td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">4300</td></tr>
-    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Gentoo</td>
-<td class="gt_row gt_center">Biscoe</td>
-<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">45.8</td>
-<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">4700</td></tr>
     <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Adelie</td>
+<td class="gt_row gt_center">Torgersen</td>
+<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">36.7</td>
+<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">3450</td></tr>
+    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Adelie</td>
+<td class="gt_row gt_center">Biscoe</td>
+<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">40.5</td>
+<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">3200</td></tr>
+    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Chinstrap</td>
 <td class="gt_row gt_center">Dream</td>
-<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">39.5</td>
-<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">3250</td></tr>
-    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Adelie</td>
-<td class="gt_row gt_center">Biscoe</td>
-<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">43.2</td>
-<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">4775</td></tr>
-    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Adelie</td>
-<td class="gt_row gt_center">Torgersen</td>
-<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">39.7</td>
-<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">3900</td></tr>
-    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Adelie</td>
-<td class="gt_row gt_center">Torgersen</td>
-<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">39.3</td>
-<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">3650</td></tr>
-    <tr><td class="gt_row gt_center" style="font-family: 'Do Hyeon'; font-size: large;">Gentoo</td>
-<td class="gt_row gt_center">Biscoe</td>
-<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">49.3</td>
-<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">5850</td></tr>
+<td class="gt_row gt_right" style="color: #595959; font-family: 'Nanum Pen Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: xx-large; font-weight: bolder;">51.0</td>
+<td class="gt_row gt_right" style="color: #0000FF; font-family: 'Black Han Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; font-size: large; font-weight: bolder;">4100</td></tr>
   </tbody>
   <tfoot class="gt_sourcenotes">
     <tr>

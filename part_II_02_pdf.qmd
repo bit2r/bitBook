@@ -39,6 +39,9 @@
 ![아날로그 출판](images/pdf-analog.png)
 
 ![디지털 출판](images/pdf-digital.png)
+
+디지털 출판 방식
+
 :::
 
 

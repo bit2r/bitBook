@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>데이터 문해력과 디지털 글쓰기 - 10&nbsp; 상관관계</title>
+<title>데이터 문해력과 디지털 글쓰기 - 11&nbsp; 상관관계</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">상관관계</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">상관관계</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -157,26 +157,34 @@ ul.task-list li input[type="checkbox"] {
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">빛에듀(Bit-Edu)</span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">빛에듀(Bit-Edu)</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">통계패키지(BitStat)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BitStat_01_data_prepare.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">데이터 준비</span></a>
+  <a href="./BitStat_00_install.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">빛스탯 오픈 통계 패키지</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BitStat_02_descriptive_summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">집계표</span></a>
+  <a href="./BitStat_01_data_prepare.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">데이터 준비</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BitStat_03_correlation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">상관관계</span></a>
+  <a href="./BitStat_02_descriptive_summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">집계표</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BitStat_03_correlation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">상관관계</span></a>
   </div>
 </li>
       </ul>
@@ -195,10 +203,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">목차</h2>
    
   <ul>
-  <li><a href="#상관관계-기능" id="toc-상관관계-기능" class="nav-link active" data-scroll-target="#상관관계-기능"><span class="toc-section-number">10.1</span>  상관관계 기능</a>
+  <li><a href="#상관관계-기능" id="toc-상관관계-기능" class="nav-link active" data-scroll-target="#상관관계-기능"><span class="toc-section-number">11.1</span>  상관관계 기능</a>
   <ul class="collapse">
-  <li><a href="#상관행렬" id="toc-상관행렬" class="nav-link" data-scroll-target="#상관행렬"><span class="toc-section-number">10.1.1</span>  상관행렬</a></li>
-  <li><a href="#상관검정" id="toc-상관검정" class="nav-link" data-scroll-target="#상관검정"><span class="toc-section-number">10.1.2</span>  상관검정</a></li>
+  <li><a href="#상관행렬" id="toc-상관행렬" class="nav-link" data-scroll-target="#상관행렬"><span class="toc-section-number">11.1.1</span>  상관행렬</a></li>
+  <li><a href="#상관검정" id="toc-상관검정" class="nav-link" data-scroll-target="#상관검정"><span class="toc-section-number">11.1.2</span>  상관검정</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -208,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">상관관계</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">상관관계</span></h1>
 </div>
 
 
@@ -224,20 +232,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>수치형 변수의 상관관계를 분석합니다. 상관행렬을 구하고 상관행렬을 시각화하며, 상관검정과 두 변수의 상관관계 플롯으로 변수의 관계를 쉽게 파악할 수 있도록 도와줍니다.</p>
-<section id="상관관계-기능" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="상관관계-기능"><span class="header-section-number">10.1</span> 상관관계 기능</h2>
+<section id="상관관계-기능" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="상관관계-기능"><span class="header-section-number">11.1</span> 상관관계 기능</h2>
 <p><code>상관관계</code> 메뉴에서는 수치형 변수의 <strong>상관행렬</strong>과 두 수치형 변수의 <strong>상관검정</strong>을 수행하고 <strong>산점도</strong>를 시각화합니다.</p>
 <ul>
 <li>상관행렬(correlation matrix)</li>
 <li>상관검정(correlation test)</li>
 </ul>
-<section id="상관행렬" class="level3" data-number="10.1.1">
-<h3 data-number="10.1.1" class="anchored" data-anchor-id="상관행렬"><span class="header-section-number">10.1.1</span> 상관행렬</h3>
+<section id="상관행렬" class="level3" data-number="11.1.1">
+<h3 data-number="11.1.1" class="anchored" data-anchor-id="상관행렬"><span class="header-section-number">11.1.1</span> 상관행렬</h3>
 <p>수치형 변수들의 상관행렬(correlation matrix)을 작성하고, 상관행렬도(correlation matrix plot)를 시각화합니다.</p>
 <p>상관행렬 기능은 <strong>기술통계 &gt; 상관관계 &gt; 상관행렬</strong>의 메뉴 체계로 접근합니다.</p>
 <p><br></p>
-<section id="상관행렬-계산을-위한-입력-위젯" class="level4" data-number="10.1.1.1">
-<h4 data-number="10.1.1.1" class="anchored" data-anchor-id="상관행렬-계산을-위한-입력-위젯"><span class="header-section-number">10.1.1.1</span> 상관행렬 계산을 위한 입력 위젯</h4>
+<section id="상관행렬-계산을-위한-입력-위젯" class="level4" data-number="11.1.1.1">
+<h4 data-number="11.1.1.1" class="anchored" data-anchor-id="상관행렬-계산을-위한-입력-위젯"><span class="header-section-number">11.1.1.1</span> 상관행렬 계산을 위한 입력 위젯</h4>
 <ul>
 <li>대상변수 선택 방법:
 <ul>
@@ -286,8 +294,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><br></p>
 </section>
-<section id="기본-상관행렬-출력" class="level4" data-number="10.1.1.2">
-<h4 data-number="10.1.1.2" class="anchored" data-anchor-id="기본-상관행렬-출력"><span class="header-section-number">10.1.1.2</span> 기본 상관행렬 출력</h4>
+<section id="기본-상관행렬-출력" class="level4" data-number="11.1.1.2">
+<h4 data-number="11.1.1.2" class="anchored" data-anchor-id="기본-상관행렬-출력"><span class="header-section-number">11.1.1.2</span> 기본 상관행렬 출력</h4>
 <p><code>상관행렬</code>에서 상관행렬을 출력하는 방법은 <code>데이터셋:</code> 리스트박스에서 <code>diamonds</code> 데이터를 선택을 전제로 소개합니다.</p>
 <p>기술통계 &gt; 상관관계 &gt; 상관행렬의 기본 설정으로 <code>실행</code> 버튼을 클릭하면 오른쪽 결과 영역에 <strong>상관행렬</strong>이 출력됩니다.</p>
 <p>이 기본 설정은 다음과 같습니다.</p>
@@ -313,8 +321,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 </section>
-<section id="사용자-변수선택-상관행렬-출력" class="level4" data-number="10.1.1.3">
-<h4 data-number="10.1.1.3" class="anchored" data-anchor-id="사용자-변수선택-상관행렬-출력"><span class="header-section-number">10.1.1.3</span> 사용자 변수선택 상관행렬 출력</h4>
+<section id="사용자-변수선택-상관행렬-출력" class="level4" data-number="11.1.1.3">
+<h4 data-number="11.1.1.3" class="anchored" data-anchor-id="사용자-변수선택-상관행렬-출력"><span class="header-section-number">11.1.1.3</span> 사용자 변수선택 상관행렬 출력</h4>
 <p>전체 수치형 변수가 아닌, 사용자가 출력할 수치형 변수를 선택할 수 있습니다. 이 예제에서는 <code>caret</code>, <code>table</code> 두 변수를 선택합니다.</p>
 <p>상관행렬을 위한 설정은 다음과 같이 정의되었습니다.</p>
 <ul>
@@ -340,8 +348,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 </section>
-<section id="범주별-수치형-변수-상관행렬-출력" class="level4" data-number="10.1.1.4">
-<h4 data-number="10.1.1.4" class="anchored" data-anchor-id="범주별-수치형-변수-상관행렬-출력"><span class="header-section-number">10.1.1.4</span> 범주별 수치형 변수 상관행렬 출력</h4>
+<section id="범주별-수치형-변수-상관행렬-출력" class="level4" data-number="11.1.1.4">
+<h4 data-number="11.1.1.4" class="anchored" data-anchor-id="범주별-수치형-변수-상관행렬-출력"><span class="header-section-number">11.1.1.4</span> 범주별 수치형 변수 상관행렬 출력</h4>
 <p><code>범주별 계산</code> 체크 박스를 체크하면, 선택한 범주형 변수의 수준(levels)별로 수치형 변수의 상관행렬을 계산할 수 있습니다.</p>
 <p>다음 그림처럼 <code>범주별 계산</code> 체크 박스를 체크하여 나타난 <code>범주형 변수 목록:</code>에서 범주형 변수인 <code>cut</code>을 선택합니다.</p>
 <p>상관행렬을 위한 설정은 다음과 같이 정의되었습니다.</p>
@@ -376,8 +384,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 </section>
-<section id="시각화와-함께-상관행렬-출력" class="level4" data-number="10.1.1.5">
-<h4 data-number="10.1.1.5" class="anchored" data-anchor-id="시각화와-함께-상관행렬-출력"><span class="header-section-number">10.1.1.5</span> 시각화와 함께 상관행렬 출력</h4>
+<section id="시각화와-함께-상관행렬-출력" class="level4" data-number="11.1.1.5">
+<h4 data-number="11.1.1.5" class="anchored" data-anchor-id="시각화와-함께-상관행렬-출력"><span class="header-section-number">11.1.1.5</span> 시각화와 함께 상관행렬 출력</h4>
 <p>상관행렬은 여러 수치형 변수의 조합으로 구성된 통계량의 행렬구조입니다. 이 구조를 시각화하면 좀 더 쉽게 변수들의 관계를 파악할 수 있습니다.</p>
 <p><code>시각화 여부</code> 체크 박스를 체크하면, 수치형 변수들의 관계를 파악할 수 있는 <code>상관행렬도(correlation matrix plot)</code>을 함께 출력할 수 있습니다.</p>
 <p>다음은 <code>시각화 여부</code> 체크 박스를 체크한 경우의 결과입니다. 상관행렬에 출력된 구도와 유사한 플롯이 출력됩니다.</p>
@@ -390,13 +398,13 @@ ul.task-list li input[type="checkbox"] {
 <p><br></p>
 </section>
 </section>
-<section id="상관검정" class="level3" data-number="10.1.2">
-<h3 data-number="10.1.2" class="anchored" data-anchor-id="상관검정"><span class="header-section-number">10.1.2</span> 상관검정</h3>
+<section id="상관검정" class="level3" data-number="11.1.2">
+<h3 data-number="11.1.2" class="anchored" data-anchor-id="상관검정"><span class="header-section-number">11.1.2</span> 상관검정</h3>
 <p>두 수치형 변수의 상관검정을 수행하고, 두 변수의 관계를 산점도 기반으로 시각화합니다.</p>
 <p>상관검정 기능은 <strong>기술통계 &gt; 상관관계 &gt; 상관검정</strong>의 메뉴 체계로 접근합니다.</p>
 <p><br></p>
-<section id="상관검정을-위한-입력-위젯" class="level4" data-number="10.1.2.1">
-<h4 data-number="10.1.2.1" class="anchored" data-anchor-id="상관검정을-위한-입력-위젯"><span class="header-section-number">10.1.2.1</span> 상관검정을 위한 입력 위젯</h4>
+<section id="상관검정을-위한-입력-위젯" class="level4" data-number="11.1.2.1">
+<h4 data-number="11.1.2.1" class="anchored" data-anchor-id="상관검정을-위한-입력-위젯"><span class="header-section-number">11.1.2.1</span> 상관검정을 위한 입력 위젯</h4>
 <ul>
 <li>수치형 변수 목록(두개 선택):
 <ul>
@@ -433,8 +441,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><br></p>
 </section>
-<section id="기본-상관검정-출력" class="level4" data-number="10.1.2.2">
-<h4 data-number="10.1.2.2" class="anchored" data-anchor-id="기본-상관검정-출력"><span class="header-section-number">10.1.2.2</span> 기본 상관검정 출력</h4>
+<section id="기본-상관검정-출력" class="level4" data-number="11.1.2.2">
+<h4 data-number="11.1.2.2" class="anchored" data-anchor-id="기본-상관검정-출력"><span class="header-section-number">11.1.2.2</span> 기본 상관검정 출력</h4>
 <p>기술통계 &gt; 상관관계 &gt; 상관검정의 기본 설정으로 <code>실행</code> 버튼을 클릭하면 오른쪽 결과 영역에 <strong>상관검정 결과</strong>가 출력됩니다.</p>
 <p>이 기본 설정은 다음과 같습니다.</p>
 <ul>
@@ -463,8 +471,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 </section>
-<section id="범주별-상관검정" class="level4" data-number="10.1.2.3">
-<h4 data-number="10.1.2.3" class="anchored" data-anchor-id="범주별-상관검정"><span class="header-section-number">10.1.2.3</span> 범주별 상관검정</h4>
+<section id="범주별-상관검정" class="level4" data-number="11.1.2.3">
+<h4 data-number="11.1.2.3" class="anchored" data-anchor-id="범주별-상관검정"><span class="header-section-number">11.1.2.3</span> 범주별 상관검정</h4>
 <p><code>범주별 계산</code> 체크 박스를 체크하면, 선택한 범주형 변수의 수준(levels)별로 두 수치형 변수의 상관검정을 수행합니다.</p>
 <p>다음 그림처럼 <code>범주별 계산</code> 체크 박스를 체크하여 나타난 <code>범주형 변수 목록:</code>에서 범주형 변수인 <code>cut</code>을 선택합니다.</p>
 <p>상관검정을 위한 설정은 다음과 같이 정의되었습니다.</p>
@@ -499,8 +507,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 </section>
-<section id="시각화를-포함한-상관검정" class="level4" data-number="10.1.2.4">
-<h4 data-number="10.1.2.4" class="anchored" data-anchor-id="시각화를-포함한-상관검정"><span class="header-section-number">10.1.2.4</span> 시각화를 포함한 상관검정</h4>
+<section id="시각화를-포함한-상관검정" class="level4" data-number="11.1.2.4">
+<h4 data-number="11.1.2.4" class="anchored" data-anchor-id="시각화를-포함한-상관검정"><span class="header-section-number">11.1.2.4</span> 시각화를 포함한 상관검정</h4>
 <p><code>시각화 여부</code> 체크 박스를 체크하면, 상관검정 결과와 함께 두 수치변수의 관계를 파악할 수 있는 <code>산점도(scatter plot)</code>를 출력합니다.</p>
 <p>다음은 <code>시각화 여부</code> 체크 박스를 체크한 경우의 결과입니다.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -652,7 +660,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./BitStat_02_descriptive_summary.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">집계표</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">집계표</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

@@ -24,7 +24,9 @@ book:
         - part_II_01_fonts.qmd
         - part_II_02_pdf.qmd
     - part: "빛에듀(Bit-Edu)"
+    - part: "통계패키지(BitStat)"
       chapters:
+        - BitStat_00_install.qmd
         - BitStat_01_data_prepare.qmd
         - BitStat_02_descriptive_summary.qmd
         - BitStat_03_correlation.qmd
@@ -50,6 +52,7 @@ format:
     cover-image: koRea_logo.png
   pdf:
     documentclass: scrreprt
+    papersize: b5
 
 
 # quarto.cmd render --to pdf -s -V papersize:b5 --output-dir _pdf_B5
