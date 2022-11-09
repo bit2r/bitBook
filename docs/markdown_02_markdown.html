@@ -276,7 +276,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </ul></li>
   <li><a href="#컴파일" id="toc-컴파일" class="nav-link" data-scroll-target="#컴파일"><span class="toc-section-number">4.3</span>  컴파일</a>
   <ul class="collapse">
-  <li><a href="#pandoc-으로-컴파일" id="toc-pandoc-으로-컴파일" class="nav-link" data-scroll-target="#pandoc-으로-컴파일"><span class="toc-section-number">4.3.1</span>  <code>pandoc</code> 으로 컴파일</a></li>
+  <li><a href="#팬독pandoc-으로-컴파일" id="toc-팬독pandoc-으로-컴파일" class="nav-link" data-scroll-target="#팬독pandoc-으로-컴파일"><span class="toc-section-number">4.3.1</span>  팬독(<code>pandoc</code>) 으로 컴파일</a></li>
   <li><a href="#견본-템플릿" id="toc-견본-템플릿" class="nav-link" data-scroll-target="#견본-템플릿"><span class="toc-section-number">4.3.2</span>  견본 템플릿</a></li>
   <li><a href="#선택옵션-플래그" id="toc-선택옵션-플래그" class="nav-link" data-scroll-target="#선택옵션-플래그"><span class="toc-section-number">4.3.3</span>  선택옵션 플래그</a></li>
   </ul></li>
@@ -307,14 +307,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>이번 학습은 핵심 마크다운 구문 개요를 보여주고 있다. 시작하기 전에, 몇가지 마크다운 방언(?)이 인터넷에 존재하고 있다는 점을 상기한다. <a href="http://commonmark.org/">CommonMark</a>은 표준에 기초해서 생성되었고, <a href="https://help.github.com/articles/github-flavored-markdown/">GFM</a>은 <em>GitHub</em> 에서 개발되어 너무나도 널리 사용되어 이미 표준이 되었다. 이번 학습은 두 마크다운에 <em>공통으로</em> 존재하는 구문을 소개한다. 또다른 흥미롭지만 아직 미완성인 <a href="http://scholarlymarkdown.com/">Scholarly Markdown</a>도 있는데, 학계 저작을 목표로 개발되고 있다.</p>
 <section id="메타데이터metadata" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="메타데이터metadata"><span class="header-section-number">4.1</span> 메타데이터(Metadata)</h2>
-<p>마크다운으로 문서 메타데이터를 저자가 <code>YAML</code> 헤더에 나타낼 수 있다. <code>YAML</code> 은 “Yet Another Markup Language”를 축약한 두문어지만 중요하지는 않다. <code>YAML</code> 헤더는 다음과 같다.</p>
+<p>마크다운으로 문서 메타데이터를 저자가 야믈(<code>YAML</code>) 헤더에 나타낼 수 있다. <code>YAML</code> 은 “Yet Another Markup Language”를 축약한 두문어지만 중요하지는 않다. <code>YAML</code> 헤더는 다음과 같다.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Modern scientific authoring using Markdown and `pandoc`"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">shorttitle</span><span class="kw">:</span><span class="at"> Modern scientific authoring</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> Timothée Poisot</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> May 9, 2015</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>상기 <code>YAML</code> 헤더 요소는 <em>견본(템플릿)</em> 으로 사용된다.</p>
+<p>상기 야믈(<code>YAML</code>) 헤더 요소는 <em>견본(템플릿)</em> 으로 사용된다.</p>
 </section>
 <section id="기본-구문" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="기본-구문"><span class="header-section-number">4.2</span> 기본 구문</h2>
@@ -370,13 +370,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="컴파일" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="컴파일"><span class="header-section-number">4.3</span> 컴파일</h2>
 <p>지금까지 작성원고는 말그대로 마크다운 자체 파일(확장자가 <code>mkd</code>, <code>.markdown</code>, <code>.pandoc</code>)이다. 마크다운을 뭔가 다른 것으로 변환할 필요가 있다. 대체로 PDF, 혹은 텍스트 프로세서에서 볼 수 있는 문서형식이 된다.</p>
-<section id="pandoc-으로-컴파일" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="pandoc-으로-컴파일"><span class="header-section-number">4.3.1</span> <code>pandoc</code> 으로 컴파일</h3>
-<p><code>pandoc</code> 프로그램이 이런 작업을 수행하는 나름 최적의 도구다.(물론, <code>jekyll</code> 처럼 웹에 특화된 도구도 존재한다.) 대부분의 명령-라인 도구와 마찬가지로, <code>pandoc</code>은 입력값으로 파일과 일부 선택옵션 <code>플래그</code>를 순차적으로 받는다. <code>pandoc</code>을 호출하는 기본방식은 다음과 같다:</p>
+<section id="팬독pandoc-으로-컴파일" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="팬독pandoc-으로-컴파일"><span class="header-section-number">4.3.1</span> 팬독(<code>pandoc</code>) 으로 컴파일</h3>
+<p>팬독(<code>pandoc</code>) 프로그램이 이런 작업을 수행하는 나름 최적의 도구다.(물론, <code>jekyll</code> 처럼 웹에 특화된 도구도 존재한다.) 대부분의 명령-라인 도구와 마찬가지로, <code>pandoc</code>은 입력값으로 파일과 일부 선택옵션 <code>플래그</code>를 순차적으로 받는다. <code>pandoc</code>을 호출하는 기본방식은 다음과 같다:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="at">pandoc input.ext -o output.ext</span></span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="기본-구문-1" class="level4" data-number="4.3.1.1">
 <h4 data-number="4.3.1.1" class="anchored" data-anchor-id="기본-구문-1"><span class="header-section-number">4.3.1.1</span> 기본 구문</h4>
-<p><code>pandoc</code> 아래 숨은 <em>마술</em> 로 입력파일이 출력 파일로 된다. 다음 경우에, 입력파일은 마크다운으로 PDF 파일을 생성하는 마술 명령어는 다음과 같다:</p>
+<p>팬독(<code>pandoc</code>) 아래 숨은 <em>마술</em> 로 입력파일이 출력 파일로 된다. 다음 경우에, 입력파일은 마크다운으로 PDF 파일을 생성하는 마술 명령어는 다음과 같다:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="at">pandoc manuscript.md -o manuscript.pdf</span></span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>그리고 MS 워드 문서를 생성하려면 다음과 같다.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="at">pandoc manuscript.md -o manuscript.doc</span></span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -385,7 +385,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="견본-템플릿" class="level3" data-number="4.3.2">
 <h3 data-number="4.3.2" class="anchored" data-anchor-id="견본-템플릿"><span class="header-section-number">4.3.2</span> 견본 템플릿</h3>
-<p>최종문서에 작성한 것을 어디에 넣을지 <code>pandoc</code>은 어떻게 알 수 있을까? 다양한 <em>견본 템플릿</em> 이 존재하는데, 견본 템플릿에는 <code>pandoc</code>이 모든 요소를 어디에 넣을지 정리되어 있다. <code>pandoc</code> 웹사이트에서 견본 템플릿을 복사하고 변경할 수 있는 다양한 정보가 담겨있다. 구글로 바로 찾을 수 있는 재사용가능한 견본 템플릿이 상당히 많다.</p>
+<p>최종문서에 작성한 것을 어디에 넣을지 팬독(<code>pandoc</code>)은 어떻게 알 수 있을까? 다양한 <em>견본 템플릿</em> 이 존재하는데, 견본 템플릿에는 <code>pandoc</code>이 모든 요소를 어디에 넣을지 정리되어 있다. <code>pandoc</code> 웹사이트에서 견본 템플릿을 복사하고 변경할 수 있는 다양한 정보가 담겨있다. 구글로 바로 찾을 수 있는 재사용가능한 견본 템플릿이 상당히 많다.</p>
 </section>
 <section id="선택옵션-플래그" class="level3" data-number="4.3.3">
 <h3 data-number="4.3.3" class="anchored" data-anchor-id="선택옵션-플래그"><span class="header-section-number">4.3.3</span> 선택옵션 플래그</h3>

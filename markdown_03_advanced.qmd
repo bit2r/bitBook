@@ -95,9 +95,9 @@ The sum of a vector of numbers ($\mathbf{v}$) is noted
 사람이 관여하지 않고도 `Fig. 1`, `Tab. 2`, `Eqn. 3`, 혹은 기타 필요한 것을 
 자동으로 완성시킨다.
 
-## 참고문헌
+## 참고문헌의 표현
 
-학술논문에 있는 최종 요건은 참고문헌이다.
+학술논문에 있는 최종 요건은 **참고문헌**이다.
 `pandoc`과 `pandoc-citeproc` 확장기능을 통해 마크다운이 참고문헌 기능을 매우 우아하게 처리한다.
 `pandoc` 서지관리 모듈은 다양한 형식으로부터 인용을 불러올 수 있다.
 최초 `CSL JSON` 와 `CSL YAML`로 설계되어, bibtex과 RIS를 수용할 수 있다.

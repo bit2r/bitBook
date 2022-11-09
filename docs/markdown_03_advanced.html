@@ -269,7 +269,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#수식" id="toc-수식" class="nav-link active" data-scroll-target="#수식"><span class="toc-section-number">5.1</span>  수식</a></li>
   <li><a href="#표" id="toc-표" class="nav-link" data-scroll-target="#표"><span class="toc-section-number">5.2</span>  표</a></li>
   <li><a href="#그림" id="toc-그림" class="nav-link" data-scroll-target="#그림"><span class="toc-section-number">5.3</span>  그림</a></li>
-  <li><a href="#참고문헌" id="toc-참고문헌" class="nav-link" data-scroll-target="#참고문헌"><span class="toc-section-number">5.4</span>  참고문헌</a></li>
+  <li><a href="#참고문헌의-표현" id="toc-참고문헌의-표현" class="nav-link" data-scroll-target="#참고문헌의-표현"><span class="toc-section-number">5.4</span>  참고문헌의 표현</a></li>
   </ul>
 </nav>
     </div>
@@ -371,9 +371,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">[</span><span class="at">swc</span><span class="kw">]:</span><span class="at"> (images/swc-logo-blue.png)</span></span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>LaTeX</code> 명령어, <code>\label{f:swc}</code> 라벨을 넣은 것에 주목한다. <code>\autoref{f:swc}</code>를 사용해서 텍스트에 그림을 참조하게 한다. <code>LaTeX</code>에 <code>autoref</code> 팩키지는 놀랍도록 유용한데, 참조하는 객체 유형을 식별해서, 사람이 관여하지 않고도 <code>Fig. 1</code>, <code>Tab. 2</code>, <code>Eqn. 3</code>, 혹은 기타 필요한 것을 자동으로 완성시킨다.</p>
 </section>
-<section id="참고문헌" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="참고문헌"><span class="header-section-number">5.4</span> 참고문헌</h2>
-<p>학술논문에 있는 최종 요건은 참고문헌이다. <code>pandoc</code>과 <code>pandoc-citeproc</code> 확장기능을 통해 마크다운이 참고문헌 기능을 매우 우아하게 처리한다. <code>pandoc</code> 서지관리 모듈은 다양한 형식으로부터 인용을 불러올 수 있다. 최초 <code>CSL JSON</code> 와 <code>CSL YAML</code>로 설계되어, bibtex과 RIS를 수용할 수 있다.</p>
+<section id="참고문헌의-표현" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="참고문헌의-표현"><span class="header-section-number">5.4</span> 참고문헌의 표현</h2>
+<p>학술논문에 있는 최종 요건은 <strong>참고문헌</strong>이다. <code>pandoc</code>과 <code>pandoc-citeproc</code> 확장기능을 통해 마크다운이 참고문헌 기능을 매우 우아하게 처리한다. <code>pandoc</code> 서지관리 모듈은 다양한 형식으로부터 인용을 불러올 수 있다. 최초 <code>CSL JSON</code> 와 <code>CSL YAML</code>로 설계되어, bibtex과 RIS를 수용할 수 있다.</p>
 <p>참고문헌을 참조하는 방식은 인용키, <code>@CitationKey</code>를 이용한다. 예를 들어, (bibtex) 라이브러리에 다음 참고문헌이 담겨 있다면:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="at">@ARTICLE{thom99,</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="at">    title = {The raw material for coevolution},</span></span>
