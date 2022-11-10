@@ -53,7 +53,7 @@ format:
   pdf:
     documentclass: scrreprt
     papersize: b5paper
-    geometry: margin=2cm
+    geometry: "left=2cm, right=2cm, top=2.7cm, bottom=3cm"
     header-includes:
       - \usepackage{lastpage}
       - \usepackage{fancyhdr}
