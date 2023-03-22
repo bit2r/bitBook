@@ -5,9 +5,13 @@ project:
 lang: kr
 
 book:
-  title: "데이터 문해력과 디지털 글쓰기"
-  subtitle: "오픈소스 소프트웨어: 빛에듀(Bit-Edu)"
-  author: "한국 R 사용자회"
+  title: "디지털 글쓰기"
+  subtitle: "chatGPT와 함께 하는 AI 글쓰기"
+  author:
+    - name: "이광춘"
+      affiliations: "사단법인 한국 R 사용자회"
+    - name: "신종화"
+      affiliations: "사단법인 한국 R 사용자회"
   date: last-modified
   date-format: "YYYY년 MM월 DD일"
   chapters:
@@ -23,13 +27,6 @@ book:
         - markdown_03_advanced.qmd
         - part_II_01_fonts.qmd
         - part_II_02_pdf.qmd
-    - part: "빛에듀(Bit-Edu)"
-    - part: "통계패키지(BitStat)"
-      chapters:
-        - BitStat_00_install.qmd
-        - BitStat_01_data_prepare.qmd
-        - BitStat_02_descriptive_summary.qmd
-        - BitStat_03_correlation.qmd
     - references.qmd
   sidebar:
     pinned: true
