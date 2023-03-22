@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="이광춘">
-<meta name="author" content="신종화">
 
-<title>디지털 글쓰기</title>
+<title>디지털 글쓰기 - 2&nbsp; 디지털 글쓰기</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,25 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
 </style>
 
 
@@ -50,7 +29,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./part_I_01_intro.html" rel="next">
+<link href="./part_I_03_history.html" rel="next">
+<link href="./part_I_01_intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -80,6 +60,7 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -89,7 +70,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">디지털 글쓰기</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">디지털 글쓰기</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -118,7 +99,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">서문</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">서문</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -136,7 +117,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part_I_02_digital.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">디지털 글쓰기</span></a>
+  <a href="./part_I_02_digital.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">디지털 글쓰기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -160,7 +141,11 @@ div.csl-indent {
     <h2 id="toc-title">목차</h2>
    
   <ul>
-  <li><a href="#서문" id="toc-서문" class="nav-link active" data-scroll-target="#서문">서문</a></li>
+  <li><a href="#디지털-문서-제작-패러다임" id="toc-디지털-문서-제작-패러다임" class="nav-link active" data-scroll-target="#디지털-문서-제작-패러다임"><span class="toc-section-number">2.1</span>  디지털 문서 제작 패러다임</a></li>
+  <li><a href="#문서로-보는-민주주의" id="toc-문서로-보는-민주주의" class="nav-link" data-scroll-target="#문서로-보는-민주주의"><span class="toc-section-number">2.2</span>  문서로 보는 민주주의</a></li>
+  <li><a href="#디지털-문서-저작" id="toc-디지털-문서-저작" class="nav-link" data-scroll-target="#디지털-문서-저작"><span class="toc-section-number">2.3</span>  디지털 문서 저작</a></li>
+  <li><a href="#과학문서-저작" id="toc-과학문서-저작" class="nav-link" data-scroll-target="#과학문서-저작"><span class="toc-section-number">2.4</span>  과학문서 저작</a></li>
+  <li><a href="#사례-한국-r-컨퍼런스2021" id="toc-사례-한국-r-컨퍼런스2021" class="nav-link" data-scroll-target="#사례-한국-r-컨퍼런스2021"><span class="toc-section-number">2.5</span>  사례: 한국 R 컨퍼런스(2021)</a></li>
   </ul>
 </nav>
     </div>
@@ -169,42 +154,14 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">디지털 글쓰기</h1>
-<p class="subtitle lead">chatGPT와 함께 AI 글쓰기</p>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">디지털 글쓰기</span></h1>
 </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">저자</div>
-  <div class="quarto-title-meta-heading">소속</div>
-  
-    <div class="quarto-title-meta-contents">
-    이광춘 
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            사단법인 한국 R 사용자회
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    신종화 
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            사단법인 한국 R 사용자회
-          </p>
-      </div>
-    </div>
 
 <div class="quarto-title-meta">
 
-      
-    <div>
-    <div class="quarto-title-meta-heading">공개</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2023년 03월 22일</p>
-    </div>
-  </div>
+    
   
     
   </div>
@@ -212,31 +169,66 @@ div.csl-indent {
 
 </header>
 
+<section id="디지털-문서-제작-패러다임" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="디지털-문서-제작-패러다임"><span class="header-section-number">2.1</span> 디지털 문서 제작 패러다임</h2>
+<p>신속하고 빠르게 누구나 짧은 학습을 통해서 문서를 저작하고 출판할 수 있는 방식으로 인기를 얻은 아래한글 혹은 MS워드 워드프로세서를 사용하는데 이는 <strong>위지위그(WYSIWYG: What You See Is What You Get, “보는 대로 얻는다”)</strong>에 기초한 것으로 문서 편집 과정에서 화면에 포맷된 낱말, 문장이 출력물과 동일하게 나오는 방식이다. 이전 타자기 대비 경쟁력이 있었고 이를 바탕으로 문서편집기 소프트웨어가 대세로 떠올랐다.</p>
+<p>위지윅의 대척점에 있는 것이 <strong>위지윔(WYSIWYM, What You See Is What You Mean)</strong>으로 대표적인 것인 <span class="math inline">\(LaTeX\)</span> 으로 구조화된 방식으로 문서를 작성하면 컴파일을 통해서 최종 문서가 미려한 출판가능한 PDF, PS, DVI 등 확장자를 갖는 출판결과물을 얻을 수 있다.</p>
+<p><span class="math inline">\(LaTeX\)</span>이 갖는 장점은 이제 프로그래밍 코드(R / 파이썬 / SQL / 쉘스크립트 / 자바스크립트 등)을 문서저작에 포함되며 <strong>literate programming</strong> 패러다임이 대세로 떠올랐고 현존하는 다양한 문서저작 문제에 대한 응답으로 자리를 매김하고 있다. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p><img src="images/digital-writing-paradigm-shift.png" class="img-fluid"></p>
+</section>
+<section id="문서로-보는-민주주의" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="문서로-보는-민주주의"><span class="header-section-number">2.2</span> 문서로 보는 민주주의</h2>
+<p>대한민국은 권력을 입법권, 행정권, 사법권으로 나눠 권력을 나누었다. 세부적으보 보면 다소 차이는 있겠지만 법을 만드는 것은 결국 문서를 저작하는 것이고 대한민국 정부는 법에 담긴 문서를 실행하는 기관이고 사법부는 법 문서를 해석하는 기관으로 볼 수 있다. 결국 민주주의는 문서를 기반으로 존립하는 사회체계라고 볼 수 있다. 최근 들어 인공지능이 부상하면서 문서저작을 보조하던 수단에서 이제는 사람보다 더 나은 통찰력을 보이는 분야도 속속 등장하고 있다. 이런 측면에서 인공지능 기계를 현 민주주의 체계 내에 어떻게 녹여낼 것인지 관심이 높아지고 있다.</p>
+<p><img src="images/three-pillar.png" class="img-fluid"></p>
+</section>
+<section id="디지털-문서-저작" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="디지털-문서-저작"><span class="header-section-number">2.3</span> 디지털 문서 저작</h2>
+<p>과거 둘로 쪼개져서 과학기술 문서저작 즉 논문 등은 <span class="math inline">\(LaTeX\)</span> 기반 위지윔(WYSIWYM) 패러다임이 확고한 자리를 잡았지만 위지위그(WYSIWYG) 패러다임 기반 아래한글 워드와 같은 문서저작편집기 성능이 높아지면서 사실상 둘 사이 경계도 허물어졌다.</p>
+<p>하지만, 과학기술 논문 저작에 진실성, 재현성 등이 강조되고 빅데이터 기반 과학연구가 큰 성과를 보이고 프로그래밍이 과학기술 논문 저작에 주요한 역할을 하면서 이런 추세를 반영한 과학기술 저작 패러다임이 떠오르고 있다.</p>
+<p>이러한 추세를 반영한 도구의 발전도 함께 이뤄지면서 과학기술 저작은 물론 거의 모든 문서 저작분야에 큰 변화가 일어나고 있다.</p>
+<!-- ![](images/digital-writing.gif) -->
+</section>
+<section id="과학문서-저작" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="과학문서-저작"><span class="header-section-number">2.4</span> 과학문서 저작</h2>
+<ul>
+<li><a href="http://statkclee.github.io/modern-scientific-authoring/01-mess-kr.html">심각한 현재상황</a></li>
+<li><a href="http://statkclee.github.io/modern-scientific-authoring/02-markdown-kr.html">마크다운 기초</a></li>
+<li><a href="http://statkclee.github.io/modern-scientific-authoring/03-advanced-kr.html">고급 마크다운</a></li>
+<li><a href="http://aispiration.com/comp_document/rmarkdown-in-production.html">문서저작 실무</a></li>
+<li><a href="http://aispiration.com/comp_document/cd-latex.html">수학 수식</a></li>
+</ul>
+</section>
+<section id="사례-한국-r-컨퍼런스2021" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="사례-한국-r-컨퍼런스2021"><span class="header-section-number">2.5</span> 사례: 한국 R 컨퍼런스(2021)</h2>
+<ul>
+<li><a href="https://github.com/tidyverse-korea/rconf">컨퍼런스 웹사이트</a></li>
+<li>컨퍼런스 전 기획
+<ul>
+<li><a href="https://github.com/tidyverse-korea/poster">컨퍼런스 포스터</a></li>
+<li><a href="https://github.com/tidyverse-korea/sponsor">컨퍼런스 후원</a></li>
+</ul></li>
+<li>컨퍼런스 본 행사
+<ul>
+<li><a href="http://aispiration.com/ds-authoring/useR-r-user-community.html#1">발표 슬라이드</a></li>
+<li><a href="https://github.com/tidyverse-korea/templates">발표 템플릿</a></li>
+</ul></li>
+<li>컨퍼런스 후 설문
+<ul>
+<li><a href="https://github.com/tidyverse-korea/rconf-2021-survey">설문조사 보고서</a></li>
+</ul></li>
+<li>기타
+<ul>
+<li><a href="https://github.com/tidyverse-korea/renewable">탄소중립 신재생 에너지 캠프</a></li>
+</ul></li>
+</ul>
 
-<section id="서문" class="level1 unnumbered">
-<p><img src="koRea_logo.png" title="디지털 글쓰기" class="quarto-cover-image img-fluid"></p><h1 class="unnumbered">서문</h1>
-<p>사단법인 한국 알(R) 사용자회는 디지털 불평등 해소와 통계 대중화를 위해 2022년 설립되었습니다. 오픈 통계 패키지(BitStat) 개발을 비롯하여 최근에 데이터 사이언스 관련 교재도 함께 제작하여 발간하는 작업을 수행하고 있습니다.</p>
-<p>커뮤니티 활동으로 <a href="https://www.meetup.com/seoul-r-meetup/">서울 R 미트업</a>을 매월 텍스트 마이닝, 재무회계, Shiny 앱개발, 바이오 헬스케어 등 주제를 달리하여 개최하고 있습니다. 2017년부터 시작된 서울 R 미트업 발표자료는 <a href="https://r2bit.com/seoul-r/">저장소</a>에서 확인할 수 있습니다.</p>
-<p>다음은 한국 R 사용자회에서 공공에 오픈한 전자책 콘텐츠입니다.</p>
-<p>그 첫번째 결과물로 John Fox 교수님이 개발한 설치형 오픈 통계 패키지 <code>Rcmdr</code><span class="citation" data-cites="fox2016using">(<a href="references.html#ref-fox2016using" role="doc-biblioref">Fox 2016</a>)</span> <span class="citation" data-cites="rcmdr2022manual">(<a href="references.html#ref-rcmdr2022manual" role="doc-biblioref">Fox and Bouchet-Valat 2021</a>)</span> <span class="citation" data-cites="rcmdr2005paper">(<a href="references.html#ref-rcmdr2005paper" role="doc-biblioref">Fox 2005</a>)</span> 를 신종화 님께서 한글화 및 문서화에 10년 넘게 기여해주신 한국알사용자회 저작권을 흔쾌히 허락해 주셔서 <a href="https://r2bit.com/Rcmdr/">설치형 오픈 통계 패키지 - <code>Rcmdr</code></a>로 세상에 나왔습니다.</p>
-<p>두번째 활동을 여기저기 산재되어 있던 시각화 관련 자료를 묶어 <strong><a href="https://r2bit.com/book_viz/">데이터 시각화(Data Visualization)</a></strong>를 전자책 형태로 공개하였고, 데이터 분석 관련 저술을 이어 진행하게 되었습니다.</p>
-<p>세번째 활동으로 데이터 사이언스가 하나로 구성되지 않은 것을 간파하고 데이터 사이언스를 지탱하는 기본기술을 5가지로 정리한 <strong><a href="https://r2bit.com/book_analytics/">데이터 과학을 지탱하는 기본기</a></strong> 전자책을 공개했습니다.</p>
-<p>네번째 활동으로 “데이터 과학 프로그래밍” 저작을 위해 <a href="https://www.py4e.com/book">“Python for Everybody”</a>와 <a href="http://www.py4inf.com/">Python for Informatics: Exploring Information</a>에 기반하여 2015년부터 시작된 <a href="http://aispiration.com/pythonlearn-kr/">모두를 위한 파이썬</a> 한글화 프로젝트를 추진했습니다. <a href="https://r2bit.com/book_programming/">데이터 과학 프로그래밍</a> 웹사이트에서 프로그래밍 교재를 확인할 수 있다.</p>
-<p>그외, 데이터 분석 언어 R에 관한 지식을 신속히 습득하여 독자들이 갖고 있는 문제에 접목시키고자 하시는 분은 한국 알(R) 사용자회에서 번역하여 공개한 <a href="https://r2bit.shinyapps.io/rbootcamp/">R 신병훈련소(Bootcamp)</a> 과정을 추천드립니다.</p>
-<p>“데이터 사이언스 프로그래밍” 저작물을 비롯한 한국 알(R) 사용자회 저작물은 크리에이티브 커먼즈 <a href="http://ccl.cckorea.org/about/">저작자표시-비영리-동일조건 변경 허락 (BY-NC-SA)</a> 라이선스를 준용하고 있습니다.</p>
 
-
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-rcmdr2005paper" class="csl-entry" role="doc-biblioentry">
-Fox, John. 2005. <span>“The <span>R</span> <span>C</span>ommander: A Basic Statistics Graphical User Interface to <span>R</span>.”</span> <em>Journal of Statistical Software</em> 14 (9): 1–42. <a href="https://doi.org/10.18637/jss.v014.i09">https://doi.org/10.18637/jss.v014.i09</a>.
-</div>
-<div id="ref-fox2016using" class="csl-entry" role="doc-biblioentry">
-———. 2016. <em>Using the r Commander: A Point-and-Click Interface for r</em>. Chapman; Hall/CRC.
-</div>
-<div id="ref-rcmdr2022manual" class="csl-entry" role="doc-biblioentry">
-Fox, John, and Milan Bouchet-Valat. 2021. <em><span>Rcmdr: R Commander</span></em>. <a href="https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/">https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/</a>.
-</div>
-</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>[출처: http://www.cbinews.co.kr/news/articleView.html?idxno=36859]<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
@@ -375,10 +367,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./part_I_01_intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">글쓰기</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./part_I_01_intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">글쓰기</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./part_I_03_history.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">문자와 종이 역사</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
