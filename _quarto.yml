@@ -21,13 +21,16 @@ book:
         - part_I_01_intro.qmd
         - part_I_02_digital.qmd
         - part_I_03_history.qmd
-    # - part: "디지털 글쓰기"
-    #   chapters:
-    #     - markdown_01_mess.qmd
+    - part: "디지털 글쓰기"
+      chapters:
+        - markdown_01_mess.qmd
     #     - markdown_02_markdown.qmd
     #     - markdown_03_advanced.qmd
     #     - part_II_01_fonts.qmd
     #     - part_II_02_pdf.qmd
+    - part: "실무"
+      chapters:
+        - part_00_01_publishing.qmd
     - references.qmd
   sidebar:
     pinned: true
@@ -48,6 +51,10 @@ format:
   html:
     theme: cosmo
     cover-image: koRea_logo.png
+    number-depth: 3
+    number-sections: true
+    colorlinks: true
+    cite-method: biblatex    
   pdf:
     documentclass: scrreprt
     papersize: b5paper
