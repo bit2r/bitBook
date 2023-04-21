@@ -24,7 +24,7 @@ book:
     - part: "디지털 글쓰기"
       chapters:
         - markdown_01_mess.qmd
-    #     - markdown_02_markdown.qmd
+        - markdown_02_markdown.qmd
     #     - markdown_03_advanced.qmd
     #     - part_II_01_fonts.qmd
     #     - part_II_02_pdf.qmd
